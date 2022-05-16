@@ -16,7 +16,7 @@ stages {
 
       // Get the Maven tool.
      
- // ** NOTE: This 'M3' Maven tool must be configured
+ // ** NOTE: This 'm2' Maven tool must be configured
  
      // **       in the global configuration.   
      }
@@ -67,10 +67,10 @@ stages {
 }
 post {
         success {
-            mail to:"raknas000@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
+            mail to:"medisettyswathi20@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Build success"
         }
         failure {
-            mail to:"raknas000@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
+            mail to:"medisettyswathi20@gmail.com", subject:"FAILURE: ${currentBuild.fullDisplayName}", body: "Build failed"
         }
     }       
 }
